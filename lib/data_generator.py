@@ -8,11 +8,7 @@ students = [
 ]
 def student_generator(student_list, major):
     return (student for student in student_list if major.lower() == student[2].lower())
-    """
-    Generate student records filtered by major lazily for memory efficiency
-    using a Python generator.
-    """
-    pass
+
 science_courses = student_generator(students, "Mathematics")
 print(next(science_courses))
 print(next(science_courses))

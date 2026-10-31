@@ -10,9 +10,5 @@ stds = [
 def unique_majors(student_list):
     unique_sdts = {uniq[2] for uniq in student_list}
     return unique_sdts
-    """
-    Return a set of unique student majors using set comprehension.
-    Extract the major field from each student record.
-    """
-    pass
+    
 print(unique_majors(stds))
